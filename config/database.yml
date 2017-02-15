@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  pool: 5
+  encoding: unicode
+  timeout: 5000
+
+development:
+  <<: *default
+  database: opie-challenge_development
+
+test: &test
+  <<: *default
+  database: opie-challenge_test
+
+production:
+  <<: *default
+  database: opie-challenge_production
