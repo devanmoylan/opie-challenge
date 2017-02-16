@@ -1,0 +1,99 @@
+<div class="opie-form-top-background" style="padding-top:66px;">
+</div>
+<div class="col-xs-1 col-sm-2 col-md-3 col-lg-3 opie-form-top-background" style="padding-bottom: 85px;"></div>
+<div class="col-xs-10 col-sm-8 col-md-6 col-lg-6 card-form">
+  <div class="card card-shadow">
+    <div class="header">
+      <h2 class="font-weight-300" style="padding-bottom: 20px">Timed 10-Meter Walk Test
+        <span class="pull-right">
+          <%= image_tag('opie.png', class: 'img-small img-raise', style: 'margin-top: -5px;') %>
+        </span>
+      </h2>
+
+    </div>
+  </div>
+  <div class="card card-shadow card-highlight">
+    <span class="pull-right"><button type="button" class="btn opie-secondary-btn" data-toggle="modal" data-target="#mySST1">
+      RECORD
+    </button></span>
+    <div class="header">
+      <h4 class="font-weight-300">Self-Selected Velocity <span class="secondary-opie-color">Trial 1</span></h4>
+    </div>
+    <h6><span class="opie-color trial-one"></span></h6>
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="mySST1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Self-Selected Velocity
+              <span class="secondary-opie-color">Trial 1</span></h4>
+          </div>
+          <div class="modal-body">
+            <div>Time: <span id="time"></span></div>
+            <input type="button" value="start" onclick="start();">
+            <input type="button" value="stop" onclick="stop();">
+            <input type="button" value="reset" onclick="reset()">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary" onclick="saveTrialOne()">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card card-shadow card-highlight">
+    <span class="pull-right"><button type="button" class="btn opie-secondary-btn" data-toggle="modal" data-target="#mySST2">
+      RECORD
+    </button></span>
+    <div class="header">
+      <h4 class="font-weight-300">Self-Selected Velocity <span class="secondary-opie-color">Trial 2</span></h4>
+    </div>
+    <h6><span class="opie-color trial-two"></span></h6>
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="mySST2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Self-Selected Velocity
+              <span class="secondary-opie-color">Trial 2</span></h4>
+          </div>
+          <div class="modal-body">
+            <div>Time: <span id="time"></span></div>
+            <input type="button" value="start" onclick="start();">
+            <input type="button" value="stop" onclick="stop();">
+            <input type="button" value="reset" onclick="reset()">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary" onclick="saveTrialTwo()">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="card card-shadow" style="margin-top: 15px;">
+    <div class="header">
+      <h3 class="font-weight-300">Report</h3>
+      <h4 class="trial-one"></h4>
+      <h4 class="trial-two"></h4>
+      <h4 class="trial-three"></h4>
+    </div>
+  </div>
+
+</div>
+<div class="col-xs-1 col-sm-2 col-md-3 col-lg-3 opie-form-top-background" style="padding-bottom: 85px;padding-right: 11px !important;"></div>

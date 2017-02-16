@@ -12,10 +12,90 @@
  *
  *= require_tree .
  *= require_self
- *= require rails_bootstrap_forms
  */
-
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "jquery-ui";
 @import "font-awesome";
+
+body {
+  font-family: 'proxima-nova';
+  background-color: #E0F6FE;
+  color: #5a5a5a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: proxima-nova, Helvetica, Arial, sans-serif;
+}
+
+.opie-color {
+  color: #00bbf9;
+}
+
+.opie-secondary-btn {
+  color: #2196f3;
+  background-color: transparent;
+  border-color: transparent;
+  transition: .3s;
+}
+
+.opie-secondary-btn:hover {
+  color: #0095c6;
+}
+
+.secondary-opie-color {
+  color: #6eb312;
+}
+
+.opie-form-top-background {
+  background-color: #56a0ae;
+}
+
+.card-shadow {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-color: transparent;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-form {
+  border-top: 8px solid #8ee1fc;
+  padding: 0px;
+}
+
+.card {
+  background-color: white;
+  padding: 15px;
+  padding-top: 7px;
+}
+
+.img-small {
+  height: 50px;
+  width: 50px;
+}
+
+.img-blur-remove {
+  border-radius: 5px;
+  transition: 0.3s;
+  opacity: 0.7
+}
+
+.img-blur-remove:hover {
+  opacity: 1.0;
+}
+
+.img-raise {
+  border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-highlight {
+  border-top: 1px solid transparent;
+  transition: .3s;
+  border-bottom: 1px solid transparent;
+
+}
+
+.card-highlight:hover {
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+}
