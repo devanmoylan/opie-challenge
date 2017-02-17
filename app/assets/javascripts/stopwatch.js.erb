@@ -1,14 +1,12 @@
-var Stopwatch = function(elem, options) {
+var Stopwatch = function (elem, options) {
 
-    var timer       = createTimer(),
+    var timer = createTimer(),
         startButton = createButton("START", start),
-        stopButton  = createButton("STOP", stop),
+        stopButton = createButton("STOP", stop),
         resetButton = createButton("RESET", reset),
         offset,
         clock,
         interval;
-
-    timer.id = elem.id;
 
     // default options
     options = options || {};
@@ -25,14 +23,16 @@ var Stopwatch = function(elem, options) {
 
     // private functions
     function createTimer() {
-        return document.createElement("span");
+        var span_el = document.createElement("span");
+        span_el.id = elem.id;
+        return span_el
     }
 
     function createButton(action, handler) {
         var a = document.createElement("a");
         a.href = "#" + action;
         a.innerHTML = action;
-        a.addEventListener("click", function(event) {
+        a.addEventListener("click", function (event) {
             handler();
             event.preventDefault();
         });
@@ -41,7 +41,7 @@ var Stopwatch = function(elem, options) {
 
     function start() {
         if (!interval) {
-            offset   = Date.now();
+            offset = Date.now();
             interval = setInterval(update, options.delay);
         }
     }
@@ -64,34 +64,30 @@ var Stopwatch = function(elem, options) {
     }
 
     function render() {
-        timer.innerHTML = clock/1000;
+        timer.innerHTML = clock / 1000;
     }
 
     function delta() {
         var now = Date.now(),
-            d   = now - offset;
+            d = now - offset;
 
         offset = now;
         return d;
     }
 
     // public API
-    this.start  = start;
-    this.stop   = stop;
-    this.reset  = reset;
+    this.start = start;
+    this.stop = stop;
+    this.reset = reset;
 };
 
-function saveName() {
+function saveData() {
     var name = $('#name').val();
     $('#output-name').text('Name: ' + name);
-}
 
-function saveDate() {
     var date = $('#date').val();
     $('#output-date').text('Date: ' + date);
-}
 
-function saveAid() {
     var aid = $('#aid').val();
     $('#output-aid').text('Aid: ' + aid);
 }
@@ -104,55 +100,55 @@ var timer_five_span = {};
 var timer_six_span = {};
 
 function saveTrialOne() {
-    timer_one_span = $('#trial-one').text().slice(0,-14);
+    timer_one_span = $('#trial-one').text().slice(0, -14);
     var timer_one_meters_second = (timer_one_span / 6).toFixed(3);
-    $('.trial-one-result').text('Self-Selected Velocity Trial 1 Total time: ' + timer_one_span + ' Meters per second: ' +  timer_one_meters_second);
+    $('.trial-one-result').text('Self-Selected Velocity Trial 1 Total time: ' + timer_one_span + ' Meters per second: ' + timer_one_meters_second);
     $('#mySST1').modal('hide');
 }
 
 function saveTrialTwo() {
-    timer_two_span = $('#trial-two').text().slice(0,-14);
+    timer_two_span = $('#trial-two').text().slice(0, -14);
     var timer_two_meters_second = (timer_two_span / 6).toFixed(3);
-    $('.trial-two-result').text('Self-Selected Velocity Trial 2 Total time: ' + timer_two_span + ' Meters per second: ' +  timer_two_meters_second);
+    $('.trial-two-result').text('Self-Selected Velocity Trial 2 Total time: ' + timer_two_span + ' Meters per second: ' + timer_two_meters_second);
     $('#mySST2').modal('hide');
 }
 
 function saveTrialThree() {
-    timer_three_span = $('#trial-three').text().slice(0,-14);
+    timer_three_span = $('#trial-three').text().slice(0, -14);
     var timer_three_meters_second = (timer_three_span / 6).toFixed(3);
-    $('.trial-three-result').text('Self-Selected Velocity Trial 3 Total time: ' + timer_three_span + ' Meters per second: ' +  timer_three_meters_second);
+    $('.trial-three-result').text('Self-Selected Velocity Trial 3 Total time: ' + timer_three_span + ' Meters per second: ' + timer_three_meters_second);
     $('#mySST3').modal('hide');
 }
 
-function averageSelectedVelocityTime() {
-    var selected_velocity_average = ((parseFloat(timer_one_span) + parseFloat(timer_two_span) + parseFloat(timer_three_span)) / 3).toFixed(3);
-    var selected_actual_velocity_average_per_meter = (selected_velocity_average / 6).toFixed(3);
-    $('.selected-velocity-time-average').text('Self-selected velocity: average time ' + selected_velocity_average + ' Actual velocity, average meters per second: ' +  selected_actual_velocity_average_per_meter);
-}
-
 function saveTrialFour() {
-    timer_four_span = $('#trial-four').text().slice(0,-14);
+    timer_four_span = $('#trial-four').text().slice(0, -14);
     var timer_four_meters_second = (timer_four_span / 6).toFixed(3);
-    $('.trial-four-result').text('Fast Velocity Trial 1 Total time: ' + timer_four_span + ' Meters per second: ' +  timer_four_meters_second);
+    $('.trial-four-result').text('Fast Velocity Trial 1 Total time: ' + timer_four_span + ' Meters per second: ' + timer_four_meters_second);
     $('#myFVT1').modal('hide');
 }
 
 function saveTrialFive() {
-    timer_five_span = $('#trial-five').text().slice(0,-14);
+    timer_five_span = $('#trial-five').text().slice(0, -14);
     var timer_five_meters_second = (timer_five_span / 6).toFixed(3);
-    $('.trial-five-result').text('Fast Velocity Trial 2 Total time: ' + timer_five_span + ' Meters per second: ' +  timer_five_meters_second);
+    $('.trial-five-result').text('Fast Velocity Trial 2 Total time: ' + timer_five_span + ' Meters per second: ' + timer_five_meters_second);
     $('#myFVT2').modal('hide');
 }
 
 function saveTrialSix() {
-    timer_six_span = $('#trial-six').text().slice(0,-14);
+    timer_six_span = $('#trial-six').text().slice(0, -14);
     var timer_six_meters_second = (timer_six_span / 6).toFixed(3);
-    $('.trial-six-result').text('Fast Velocity Trial 3 Total time: ' + timer_six_span + ' Meters per second: ' +  timer_six_meters_second);
+    $('.trial-six-result').text('Fast Velocity Trial 3 Total time: ' + timer_six_span + ' Meters per second: ' + timer_six_meters_second);
     $('#myFVT3').modal('hide');
 }
 
 function averageFastVelocityTime() {
     var fast_velocity_average = ((parseFloat(timer_four_span) + parseFloat(timer_five_span) + parseFloat(timer_six_span)) / 3).toFixed(3);
     var fast_actual_velocity_average_per_meter = (fast_velocity_average / 6).toFixed(3);
-    $('.fast-velocity-time-average').text('Fast velocity: average time ' + fast_velocity_average + ' Actual velocity, average meters per second: ' +  fast_actual_velocity_average_per_meter);
+    $('.fast-velocity-time-average').text('Fast velocity: average time ' + fast_velocity_average + ' Actual velocity, average meters per second: ' + fast_actual_velocity_average_per_meter);
+}
+
+function averageSelectedVelocityTime() {
+    var selected_velocity_average = ((parseFloat(timer_one_span) + parseFloat(timer_two_span) + parseFloat(timer_three_span)) / 3).toFixed(3);
+    var selected_actual_velocity_average_per_meter = (selected_velocity_average / 6).toFixed(3);
+    $('.selected-velocity-time-average').text('Self-selected velocity: average time ' + selected_velocity_average + ' Actual velocity, average meters per second: ' + selected_actual_velocity_average_per_meter);
 }
