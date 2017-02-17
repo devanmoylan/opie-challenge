@@ -22,7 +22,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="timed_10_meter.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="timed_10_meter.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/tests/timed_10_meter.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
@@ -46,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stopwatch.js.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="stopwatch.js.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/stopwatch.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="83" column="19" lean-forward="false" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="19" />
+            <state relative-caret-position="450">
+              <caret line="152" column="127" lean-forward="false" selection-start-line="152" selection-start-column="127" selection-end-line="152" selection-end-column="127" />
               <folding />
             </state>
           </provider>
@@ -93,8 +93,8 @@
       <find>modal-body</find>
       <find>close</find>
       <find>shadow</find>
-      <find>save</find>
       <find>console.log</find>
+      <find>save</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -108,8 +108,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/stopwatch.js.erb" />
         <option value="$PROJECT_DIR$/app/views/tests/timed_10_meter.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/stopwatch.js.erb" />
       </list>
     </option>
   </component>
@@ -593,12 +593,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1487179226655</updated>
-      <workItem from="1487179228822" duration="39204000" />
+      <workItem from="1487179228822" duration="39873000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39204000" />
+    <option name="totallyTimeSpent" value="39873000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="714" extended-state="0" />
@@ -701,14 +701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/stopwatch.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="83" column="19" lean-forward="false" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tests/timed_10_meter.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -728,6 +720,14 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#7;n#div#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/stopwatch.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="152" column="127" lean-forward="false" selection-start-line="152" selection-start-column="127" selection-end-line="152" selection-end-column="127" />
+          <folding />
         </state>
       </provider>
     </entry>
