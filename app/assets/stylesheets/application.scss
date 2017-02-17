@@ -1,18 +1,16 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
+ * Table on contents
+ * -----------------
+ * 1. Button related
+ * 2. Card related
+ * 3. Color related
+ * 4. Image related
+ * 5. Input related
  *
  *= require_tree .
  *= require_self
  */
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "jquery-ui";
@@ -27,8 +25,26 @@ body {
   font-family: proxima-nova, Helvetica, Arial, sans-serif;
 }
 
-.opie-color {
-  color: #00bbf9;
+/* 1. Button related */
+
+.stopwatch {
+  display: inline-block;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: -webkit-xxx-large;
+  text-align: center;
+}
+.stopwatch span {
+  font-weight: bold;
+  display: block;
+}
+
+.stopwatch a {
+  padding: inherit;
+  text-decoration: none;
+  color: #0095c6;
+  font-size: large;
 }
 
 .opie-secondary-btn {
@@ -59,13 +75,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.secondary-opie-color {
-  color: #6eb312;
-}
-
-.opie-form-top-background {
-  background-color: #56a0ae;
-}
+/* 2. Card related */
 
 .card-shadow {
   border-top-right-radius: 0px;
@@ -84,6 +94,35 @@ body {
   padding: 15px;
   padding-top: 7px;
 }
+
+.card-highlight {
+  border-top: 1px solid transparent;
+  transition: .3s;
+  border-bottom: 1px solid transparent;
+
+}
+
+.card-highlight:hover {
+  border-top: 1px solid rgba(204, 204, 204, 0.25);
+  border-bottom: 1px solid rgba(204, 204, 204, 0.25);
+}
+
+/* 3. Color related */
+
+.opie-color {
+  color: #00bbf9;
+}
+
+.secondary-opie-color {
+  color: #6eb312;
+}
+
+.opie-form-top-background {
+  background-color: #56a0ae;
+}
+
+
+/* 4. Image related */
 
 .img-small {
   height: 50px;
@@ -105,17 +144,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card-highlight {
-  border-top: 1px solid transparent;
-  transition: .3s;
-  border-bottom: 1px solid transparent;
-
-}
-
-.card-highlight:hover {
-  border-top: 1px solid rgba(204, 204, 204, 0.25);
-  border-bottom: 1px solid rgba(204, 204, 204, 0.25);
-}
+/* 5. Input related */
 
 .form-flatline-240 {
   max-width: 240px;
@@ -157,28 +186,8 @@ body {
   box-shadow: none;
 }
 
-.stopwatch {
-  display: inline-block;
-  background-color: white;
-  padding: 5px;
-  margin: 5px;
-  font-size: -webkit-xxx-large;
-  text-align: center;
-}
-.stopwatch span {
-  font-weight: bold;
-  display: block;
-}
 
-.stopwatch a {
-  padding: inherit;
-  text-decoration: none;
-  color: #0095c6;
-  font-size: large;
-}
 
-#results-div {
-  display: none;
-}
+
 
 

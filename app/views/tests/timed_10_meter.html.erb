@@ -1,6 +1,8 @@
-<div class="opie-form-top-background" style="padding-top:66px;">
+<div class="opie-form-top-background" style="padding-top:66px;border-bottom: 2px solid #56a0ae;">
 </div>
 <div class="col-xs-1 col-sm-2 col-md-3 col-lg-3 opie-form-top-background" style="padding-bottom: 85px;"></div>
+
+<!-- begin: middle column (displays content) -->
 <div class="col-xs-10 col-sm-8 col-md-6 col-lg-6 card-form">
   <div class="card card-shadow">
     <div class="header">
@@ -9,6 +11,8 @@
           <%= image_tag('opie.png', class: 'img-small img-raise', style: 'margin-top: -5px;') %>
         </span>
       </h2>
+
+      <!-- begin: gather test details -->
       <form style="padding-top: 15px;">
         <div class="form-group">
           <h4 class="font-weight-300">Name</h4>
@@ -25,6 +29,8 @@
       </form>
     </div>
   </div>
+
+  <!-- begin: trial one (order: 3 selected velocity, 3 fast velocity) -->
   <div class="card card-shadow card-highlight">
     <span class="pull-right"><button type="button" class="btn opie-secondary-btn" data-toggle="modal" data-target="#mySST1">
       RECORD
@@ -57,7 +63,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div><!-- END: TRIAL ONE -->
 
 
   <!-- begin: trial two -->
@@ -94,9 +100,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </div><!-- END: TRIAL TWO -->
 
-  <!-- begin: trial 3 -->
+  <!-- begin: trial three -->
   <div class="card card-shadow card-highlight">
     <span class="pull-right"><button type="button" class="btn opie-secondary-btn" data-toggle="modal" data-target="#mySST3">
       RECORD
@@ -130,10 +136,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </div><!-- END: TRIAL THREE -->
 
 
-  <!-- begin: trial 4 -->
+  <!-- begin: trial four -->
   <div class="card card-shadow card-highlight">
     <span class="pull-right"><button type="button" class="btn opie-secondary-btn" data-toggle="modal" data-target="#myFVT1">
       RECORD
@@ -167,10 +173,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </div><!-- END: TRIAL four -->
 
 
-  <!-- begin: trial 5 -->
+  <!-- begin: trial five -->
   <div class="card card-shadow card-highlight">
     <span class="pull-right"><button type="button" class="btn opie-secondary-btn" data-toggle="modal" data-target="#myFVT2">
       RECORD
@@ -204,10 +210,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </div><!-- END: TRIAL FIVE -->
 
 
-  <!-- begin: trial 6 -->
+  <!-- begin: trial six -->
   <div class="card card-shadow card-highlight">
     <span class="pull-right"><button type="button" class="btn opie-secondary-btn" data-toggle="modal" data-target="#myFVT3">
       RECORD
@@ -241,8 +247,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </div><!-- END: TRIAL SIX -->
 
+
+  <!-- begin: report with test results -->
   <div class="card card-shadow" style="margin-top: 15px;">
     <div class="header">
       <span class="pull-right">
@@ -266,9 +274,8 @@
           <h6 class="fast-velocity-time-average"></h6>
         </div>
       </div>
-
     </div>
-  </div>
+  </div><!-- END: REPORT -->
 
 </div>
 <div class="col-xs-1 col-sm-2 col-md-3 col-lg-3 opie-form-top-background" style="padding-bottom: 85px;"></div>
