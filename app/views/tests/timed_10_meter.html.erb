@@ -16,7 +16,7 @@
         </div>
         <div class="form-group">
           <h4 class="font-weight-300">Date</h4>
-          <input type="text" name="date" id="date" class="form-control form-flatline-240" placeholder="" >
+          <input type="text" name="date" id="date" class="form-control form-flatline-240" placeholder="">
         </div>
         <div class="form-group">
           <h4 class="font-weight-300">Assistive device and / or bracing</h4>
@@ -84,7 +84,8 @@
               <span class="secondary-opie-color">Trial 2</span></h4>
           </div>
           <div class="modal-body text-center">
-            <div class="basic stopwatch" id="trial-two"></div><br/>
+            <div class="basic stopwatch" id="trial-two"></div>
+            <br/>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn opie-secondary-btn" data-dismiss="modal">CANCEL</button>
@@ -119,7 +120,8 @@
               <span class="secondary-opie-color">Trial 3</span></h4>
           </div>
           <div class="modal-body text-center">
-            <div class="basic stopwatch" id="trial-three"></div><br/>
+            <div class="basic stopwatch" id="trial-three"></div>
+            <br/>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn opie-secondary-btn" data-dismiss="modal">CANCEL</button>
@@ -155,7 +157,8 @@
               <span class="secondary-opie-color">Trial 1</span></h4>
           </div>
           <div class="modal-body text-center">
-            <div class="basic stopwatch" id="trial-four"></div><br/>
+            <div class="basic stopwatch" id="trial-four"></div>
+            <br/>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn opie-secondary-btn" data-dismiss="modal">CANCEL</button>
@@ -191,7 +194,8 @@
               <span class="secondary-opie-color">Trial 2</span></h4>
           </div>
           <div class="modal-body text-center">
-            <div class="basic stopwatch" id="trial-five"></div><br/>
+            <div class="basic stopwatch" id="trial-five"></div>
+            <br/>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn opie-secondary-btn" data-dismiss="modal">CANCEL</button>
@@ -227,7 +231,8 @@
               <span class="secondary-opie-color">Trial 3</span></h4>
           </div>
           <div class="modal-body text-center">
-            <div class="basic stopwatch" id="trial-six"></div><br/>
+            <div class="basic stopwatch" id="trial-six"></div>
+            <br/>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn opie-secondary-btn" data-dismiss="modal">CANCEL</button>
@@ -241,21 +246,26 @@
   <div class="card card-shadow" style="margin-top: 15px;">
     <div class="header">
       <span class="pull-right">
-        <button class="btn btn-success shadow-btn" onClick="averageFastVelocityTime(); averageSelectedVelocityTime(); saveName(); saveDate(); saveAid()">FINALIZE</button>
+        <button class="btn btn-success shadow-btn" type="button" data-toggle="collapse" data-target="#collapseResults"
+                aria-expanded="false" aria-controls="collapseResults" onClick="averageFastVelocityTime();
+            averageSelectedVelocityTime(); saveName(); saveDate(); saveAid()">FINALIZE</button>
         </span>
-
       <h3 class="font-weight-300">Report</h3>
-      <h4 id="output-name"></h4>
-      <h4 id="output-date"></h4>
-      <h4 id="output-aid"></h4>
-      <h6 class="trial-one-result"></h6>
-      <h6 class="trial-two-result"></h6>
-      <h6 class="trial-three-result"></h6>
-      <h6 class="selected-velocity-time-average"></h6>
-      <h6 class="trial-four-result"></h6>
-      <h6 class="trial-five-result"></h6>
-      <h6 class="trial-six-result"></h6>
-      <h6 class="fast-velocity-time-average"></h6>
+      <div class="collapse" id="collapseResults">
+        <div class="well" style="margin-top: 21px;">
+          <h4 id="output-name"></h4>
+          <h4 id="output-date"></h4>
+          <h4 id="output-aid"></h4>
+          <h6 class="trial-one-result"></h6>
+          <h6 class="trial-two-result"></h6>
+          <h6 class="trial-three-result"></h6>
+          <h6 class="selected-velocity-time-average"></h6>
+          <h6 class="trial-four-result"></h6>
+          <h6 class="trial-five-result"></h6>
+          <h6 class="trial-six-result"></h6>
+          <h6 class="fast-velocity-time-average"></h6>
+        </div>
+      </div>
 
     </div>
   </div>

@@ -83,19 +83,16 @@ var Stopwatch = function(elem, options) {
 
 function saveName() {
     var name = $('#name').val();
-    console.log(name);
     $('#output-name').text('Name: ' + name);
 }
 
 function saveDate() {
     var date = $('#date').val();
-    console.log(date);
     $('#output-date').text('Date: ' + date);
 }
 
 function saveAid() {
     var aid = $('#aid').val();
-    console.log(aid);
     $('#output-aid').text('Aid: ' + aid);
 }
 
@@ -128,11 +125,8 @@ function saveTrialThree() {
 }
 
 function averageSelectedVelocityTime() {
-    console.log(parseFloat(timer_one_span) + parseFloat(timer_two_span) + parseFloat(timer_three_span));
     var selected_velocity_average = ((parseFloat(timer_one_span) + parseFloat(timer_two_span) + parseFloat(timer_three_span)) / 3).toFixed(3);
-    console.log(selected_velocity_average);
     var selected_actual_velocity_average_per_meter = (selected_velocity_average / 6).toFixed(3);
-    console.log(selected_actual_velocity_average_per_meter);
     $('.selected-velocity-time-average').text('Self-selected velocity: average time ' + selected_velocity_average + ' Actual velocity, average meters per second: ' +  selected_actual_velocity_average_per_meter);
 }
 

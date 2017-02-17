@@ -22,23 +22,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="timed_10_meter.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="timed_10_meter.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/tests/timed_10_meter.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3480">
-              <caret line="232" column="92" lean-forward="false" selection-start-line="232" selection-start-column="92" selection-end-line="232" selection-end-column="92" />
+            <state relative-caret-position="300">
+              <caret line="255" column="36" lean-forward="true" selection-start-line="255" selection-start-column="36" selection-end-line="255" selection-end-column="36" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="e#2081#2088#0#HTML" expanded="true" />
-                <element signature="e#3557#3564#0#HTML" expanded="true" />
-                <element signature="e#5048#5055#0#HTML" expanded="true" />
-                <element signature="e#6534#6541#0#HTML" expanded="true" />
-                <element signature="e#8009#8016#0#HTML" expanded="true" />
-                <element signature="e#9483#9490#0#HTML" expanded="true" />
+                <element signature="e#2080#2087#0#HTML" expanded="true" />
+                <element signature="e#3556#3563#0#HTML" expanded="true" />
+                <element signature="e#5060#5067#0#HTML" expanded="true" />
+                <element signature="e#6559#6566#0#HTML" expanded="true" />
+                <element signature="e#8047#8054#0#HTML" expanded="true" />
+                <element signature="e#9534#9541#0#HTML" expanded="true" />
                 <element signature="n#style#0;n#div#7;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#7;n#div#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -48,8 +49,8 @@
       <file leaf-file-name="stopwatch.js.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/stopwatch.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="105" column="25" lean-forward="true" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
+            <state relative-caret-position="855">
+              <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -67,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="application.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="19" />
+            <state relative-caret-position="135">
+              <caret line="9" column="49" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -91,9 +92,9 @@
       <find>three</find>
       <find>modal-body</find>
       <find>close</find>
+      <find>shadow</find>
       <find>save</find>
       <find>console.log</find>
-      <find>shadow</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -106,9 +107,9 @@
         <option value="$PROJECT_DIR$/app/controllers/tests_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/stopwatch.js.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
         <option value="$PROJECT_DIR$/app/views/tests/timed_10_meter.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/stopwatch.js.erb" />
       </list>
     </option>
   </component>
@@ -592,12 +593,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1487179226655</updated>
-      <workItem from="1487179228822" duration="36369000" />
+      <workItem from="1487179228822" duration="36980000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36369000" />
+    <option name="totallyTimeSpent" value="36980000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="714" extended-state="0" />
@@ -682,6 +683,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tests/timed_10_meter.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="255" column="36" lean-forward="true" selection-start-line="255" selection-start-column="36" selection-end-line="255" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="e#2080#2087#0#HTML" expanded="true" />
+            <element signature="e#3556#3563#0#HTML" expanded="true" />
+            <element signature="e#5060#5067#0#HTML" expanded="true" />
+            <element signature="e#6559#6566#0#HTML" expanded="true" />
+            <element signature="e#8047#8054#0#HTML" expanded="true" />
+            <element signature="e#9534#9541#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#7;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#7;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -694,38 +717,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/stopwatch.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="105" column="25" lean-forward="true" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
+        <state relative-caret-position="855">
+          <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="19" />
+        <state relative-caret-position="135">
+          <caret line="9" column="49" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tests/timed_10_meter.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3480">
-          <caret line="232" column="92" lean-forward="false" selection-start-line="232" selection-start-column="92" selection-end-line="232" selection-end-column="92" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="e#2081#2088#0#HTML" expanded="true" />
-            <element signature="e#3557#3564#0#HTML" expanded="true" />
-            <element signature="e#5048#5055#0#HTML" expanded="true" />
-            <element signature="e#6534#6541#0#HTML" expanded="true" />
-            <element signature="e#8009#8016#0#HTML" expanded="true" />
-            <element signature="e#9483#9490#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#7;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
