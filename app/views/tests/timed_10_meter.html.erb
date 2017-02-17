@@ -9,7 +9,20 @@
           <%= image_tag('opie.png', class: 'img-small img-raise', style: 'margin-top: -5px;') %>
         </span>
       </h2>
-
+      <form style="padding-top: 15px;">
+        <div class="form-group">
+          <h4 class="font-weight-300">Name</h4>
+          <input type="text" name="name" id="name" class="form-control form-flatline-240" placeholder="">
+        </div>
+        <div class="form-group">
+          <h4 class="font-weight-300">Date</h4>
+          <input type="text" name="date" id="date" class="form-control form-flatline-240" placeholder="" >
+        </div>
+        <div class="form-group">
+          <h4 class="font-weight-300">Assistive device and / or bracing</h4>
+          <input type="text" name="aid" id="aid" class="form-control form-flatline-415" placeholder="">
+        </div>
+      </form>
     </div>
   </div>
   <div class="card card-shadow card-highlight">
@@ -19,7 +32,7 @@
     <div class="header">
       <h4 class="font-weight-300">Self-Selected Velocity <span class="secondary-opie-color">Trial 1</span></h4>
     </div>
-    <h6><span class="opie-color trial-one"></span></h6>
+    <h6><span class="opie-color trial-one-result"></span></h6>
 
     <!-- Button trigger modal -->
 
@@ -34,20 +47,20 @@
             <h4 class="modal-title" id="myModalLabel">Self-Selected Velocity
               <span class="secondary-opie-color">Trial 1</span></h4>
           </div>
-          <div class="modal-body">
-            <div>Time: <span id="time"></span></div>
-            <input type="button" value="start" onclick="start();">
-            <input type="button" value="stop" onclick="stop();">
-            <input type="button" value="reset" onclick="reset()">
+          <div class="modal-body text-center">
+            <div class="basic stopwatch" id="trial-one"></div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            <button type="button" class="btn btn-primary" onclick="saveTrialOne()">Save</button>
+            <button type="button" class="btn opie-secondary-btn" data-dismiss="modal">CANCEL</button>
+            <button type="button" class="btn opie-secondary-btn" onClick="saveTrialOne()">SAVE</button>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+
+  <!-- begin: trial two -->
   <div class="card card-shadow card-highlight">
     <span class="pull-right"><button type="button" class="btn opie-secondary-btn" data-toggle="modal" data-target="#mySST2">
       RECORD
@@ -55,7 +68,7 @@
     <div class="header">
       <h4 class="font-weight-300">Self-Selected Velocity <span class="secondary-opie-color">Trial 2</span></h4>
     </div>
-    <h6><span class="opie-color trial-two"></span></h6>
+    <h6><span class="opie-color trial-two-result"></span></h6>
 
     <!-- Button trigger modal -->
 
@@ -70,30 +83,182 @@
             <h4 class="modal-title" id="myModalLabel">Self-Selected Velocity
               <span class="secondary-opie-color">Trial 2</span></h4>
           </div>
-          <div class="modal-body">
-            <div>Time: <span id="time"></span></div>
-            <input type="button" value="start" onclick="start();">
-            <input type="button" value="stop" onclick="stop();">
-            <input type="button" value="reset" onclick="reset()">
+          <div class="modal-body text-center">
+            <div class="basic stopwatch" id="trial-two"></div><br/>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            <button type="button" class="btn btn-primary" onclick="saveTrialTwo()">Save</button>
+            <button type="button" class="btn opie-secondary-btn" data-dismiss="modal">CANCEL</button>
+            <button type="button btn-shadow" class="btn opie-secondary-btn" onClick="saveTrialTwo()">SAVE</button>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
+  <!-- begin: trial 3 -->
+  <div class="card card-shadow card-highlight">
+    <span class="pull-right"><button type="button" class="btn opie-secondary-btn" data-toggle="modal" data-target="#mySST3">
+      RECORD
+    </button></span>
+    <div class="header">
+      <h4 class="font-weight-300">Self-Selected Velocity <span class="secondary-opie-color">Trial 3</span></h4>
+    </div>
+    <h6><span class="opie-color trial-three-result"></span></h6>
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="mySST3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Self-Selected Velocity
+              <span class="secondary-opie-color">Trial 3</span></h4>
+          </div>
+          <div class="modal-body text-center">
+            <div class="basic stopwatch" id="trial-three"></div><br/>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn opie-secondary-btn" data-dismiss="modal">CANCEL</button>
+            <button type="button btn-shadow" class="btn opie-secondary-btn" onClick="saveTrialThree()">SAVE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- begin: trial 4 -->
+  <div class="card card-shadow card-highlight">
+    <span class="pull-right"><button type="button" class="btn opie-secondary-btn" data-toggle="modal" data-target="#myFVT1">
+      RECORD
+    </button></span>
+    <div class="header">
+      <h4 class="font-weight-300">Fast Velocity <span class="secondary-opie-color">Trial 1</span></h4>
+    </div>
+    <h6><span class="opie-color trial-four-result"></span></h6>
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myFVT1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Fast Velocity
+              <span class="secondary-opie-color">Trial 1</span></h4>
+          </div>
+          <div class="modal-body text-center">
+            <div class="basic stopwatch" id="trial-four"></div><br/>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn opie-secondary-btn" data-dismiss="modal">CANCEL</button>
+            <button type="button btn-shadow" class="btn opie-secondary-btn" onClick="saveTrialFour()">SAVE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- begin: trial 5 -->
+  <div class="card card-shadow card-highlight">
+    <span class="pull-right"><button type="button" class="btn opie-secondary-btn" data-toggle="modal" data-target="#myFVT2">
+      RECORD
+    </button></span>
+    <div class="header">
+      <h4 class="font-weight-300">Fast Velocity <span class="secondary-opie-color">Trial 2</span></h4>
+    </div>
+    <h6><span class="opie-color trial-five-result"></span></h6>
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myFVT2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Fast Velocity
+              <span class="secondary-opie-color">Trial 2</span></h4>
+          </div>
+          <div class="modal-body text-center">
+            <div class="basic stopwatch" id="trial-five"></div><br/>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn opie-secondary-btn" data-dismiss="modal">CANCEL</button>
+            <button type="button btn-shadow" class="btn opie-secondary-btn" onClick="saveTrialFive()">SAVE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- begin: trial 6 -->
+  <div class="card card-shadow card-highlight">
+    <span class="pull-right"><button type="button" class="btn opie-secondary-btn" data-toggle="modal" data-target="#myFVT3">
+      RECORD
+    </button></span>
+    <div class="header">
+      <h4 class="font-weight-300">Fast Velocity <span class="secondary-opie-color">Trial 3</span></h4>
+    </div>
+    <h6><span class="opie-color trial-six-result"></span></h6>
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myFVT3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Fast Velocity
+              <span class="secondary-opie-color">Trial 3</span></h4>
+          </div>
+          <div class="modal-body text-center">
+            <div class="basic stopwatch" id="trial-six"></div><br/>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn opie-secondary-btn" data-dismiss="modal">CANCEL</button>
+            <button type="button btn-shadow" class="btn opie-secondary-btn" onClick="saveTrialSix()">SAVE</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="card card-shadow" style="margin-top: 15px;">
     <div class="header">
+      <span class="pull-right">
+        <button class="btn btn-success shadow-btn" onClick="averageFastVelocityTime(); averageSelectedVelocityTime(); saveName(); saveDate(); saveAid()">FINALIZE</button>
+        </span>
+
       <h3 class="font-weight-300">Report</h3>
-      <h4 class="trial-one"></h4>
-      <h4 class="trial-two"></h4>
-      <h4 class="trial-three"></h4>
+      <h4 id="output-name"></h4>
+      <h4 id="output-date"></h4>
+      <h4 id="output-aid"></h4>
+      <h6 class="trial-one-result"></h6>
+      <h6 class="trial-two-result"></h6>
+      <h6 class="trial-three-result"></h6>
+      <h6 class="selected-velocity-time-average"></h6>
+      <h6 class="trial-four-result"></h6>
+      <h6 class="trial-five-result"></h6>
+      <h6 class="trial-six-result"></h6>
+      <h6 class="fast-velocity-time-average"></h6>
+
     </div>
   </div>
 
 </div>
-<div class="col-xs-1 col-sm-2 col-md-3 col-lg-3 opie-form-top-background" style="padding-bottom: 85px;padding-right: 11px !important;"></div>
+<div class="col-xs-1 col-sm-2 col-md-3 col-lg-3 opie-form-top-background" style="padding-bottom: 85px;"></div>

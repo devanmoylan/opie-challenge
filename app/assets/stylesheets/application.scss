@@ -42,6 +42,23 @@ body {
   color: #0095c6;
 }
 
+.save-btn {
+  color: white;
+  background-color: #2196f3;
+  border-color: #2196f3;
+  transition: .3s;
+}
+
+.save-btn:hover {
+  color: white;
+  background-color: #00bbf9;
+}
+
+.shadow-btn {
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .secondary-opie-color {
   color: #6eb312;
 }
@@ -96,6 +113,68 @@ body {
 }
 
 .card-highlight:hover {
-  border-top: 1px solid #CCCCCC;
-  border-bottom: 1px solid #CCCCCC;
+  border-top: 1px solid rgba(204, 204, 204, 0.25);
+  border-bottom: 1px solid rgba(204, 204, 204, 0.25);
 }
+
+.form-flatline-240 {
+  max-width: 240px;
+  border: 0px solid #ccc;
+  border-radius: 0px;
+  border-bottom: 1px solid #ccc;
+  transition: .2s;
+  box-shadow: none;
+}
+
+.form-flatline-240:active {
+  border: 0px solid #ccc;
+  border-bottom: 2px solid #00bbf9;
+}
+
+.form-flatline-240:focus {
+  border-color: transparent;
+  border-bottom: 2px solid #00bbf9;
+  box-shadow: none;
+}
+
+.form-flatline-415 {
+  max-width: 415px;
+  border: 0px solid #ccc;
+  border-radius: 0px;
+  border-bottom: 1px solid #ccc;
+  transition: .2s;
+  box-shadow: none;
+}
+
+.form-flatline-415:active {
+  border: 0px solid #ccc;
+  border-bottom: 2px solid #00bbf9;
+}
+
+.form-flatline-415:focus {
+  border-color: transparent;
+  border-bottom: 2px solid #00bbf9;
+  box-shadow: none;
+}
+
+.stopwatch {
+  display: inline-block;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: -webkit-xxx-large;
+  text-align: center;
+}
+.stopwatch span {
+  font-weight: bold;
+  display: block;
+}
+
+.stopwatch a {
+  padding: inherit;
+  text-decoration: none;
+  color: #0095c6;
+  font-size: large;
+}
+
+

@@ -19,3 +19,10 @@
 //= require_tree .
 
 
+$(document).ready(function() {
+    var timer_elements = document.getElementsByClassName("basic");
+
+    for (var i=0, len=timer_elements.length; i<len; i++) {
+        new Stopwatch(timer_elements[i]);
+    }
+});
